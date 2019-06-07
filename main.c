@@ -4,8 +4,7 @@
 /*
  * Get the n bits of x starting from position p
  */
-unsigned get_bits(unsigned x, unsigned p, unsigned n)
-{
+unsigned get_bits(unsigned x, unsigned p, unsigned n) {
   // Create a mask of 1 bits of length n starting at position 0
   unsigned mask = ~(~0 << n);
 
@@ -18,12 +17,10 @@ unsigned get_bits(unsigned x, unsigned p, unsigned n)
   return x;
 }
 
-
 /*
  * Set n bits of x from position p to the rightmost n bits of y
  */
-void set_bits(unsigned *x, int p, int n, unsigned y)
-{
+void set_bits(unsigned *x, int p, int n, unsigned y) {
   // Create a mask of 1 bits of length n starting at position 0
   unsigned mask = ~(~0 << n);
 
@@ -34,8 +31,29 @@ void set_bits(unsigned *x, int p, int n, unsigned y)
   *x = *x | ((y & mask) << (p + 1 - n));
 }
 
-
-int main(int argc, char ** argv)
-{
+unsigned get_active_bit(unsigned x) {
+  // TODO
   return 0;
 }
+
+unsigned get_symbol_bit(unsigned x) {
+  // TODO
+  return 0;
+}
+
+unsigned get_north_bits(unsigned x) {
+  // TODO
+  return 0;
+}
+
+unsigned get_northwest_bits(unsigned x) {
+  // TODO
+  return 0;
+}
+
+unsigned get_west_bits(unsigned x) {
+  // TODO
+  return 0;
+}
+
+int main(int argc, char **argv) { return 0; }
